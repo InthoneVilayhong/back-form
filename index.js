@@ -13,7 +13,7 @@ const MAIL = "thonouu@gmail.com";
 
 const mailgun = require("mailgun-js")({ apiKey: API_KEY, domain: DOMAIN }); //! le require de mailgun
 
-app.post("/form", (req, res) => {
+app.post("/https://formulaire-inthone.herokuapp.com/", (req, res) => {
     const { firstname, lastname, email, message } = req.fields; //*!DESTRUCTURING
     //   console.log(req.fields);
 
