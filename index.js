@@ -36,6 +36,6 @@ app.post("/form", (req, res) => {
 app.all("*", (req, res) => {
     res.status(404).json({ message: "Not found" });
 });
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Server started");
 });
